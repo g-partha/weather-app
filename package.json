@@ -1,7 +1,7 @@
 {
-  "name": "todo-list",
+  "name": "weather-app",
   "version": "1.0.0",
-  "description": "A todo list app",
+  "description": "A weather app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/g-partha/todo-list.git"
+    "url": "git+https://github.com/g-partha/weather-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/g-partha/todo-list/issues"
+    "url": "https://github.com/g-partha/weather-app/issues"
   },
-  "homepage": "https://github.com/g-partha/todo-list#readme",
+  "homepage": "https://github.com/g-partha/weather-app#readme",
   "devDependencies": {
     "@eslint/js": "^9.23.0",
     "css-loader": "^7.1.2",
