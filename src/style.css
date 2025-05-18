@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div#container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+div#sidebar {
+  grid-column: 1 / 2;
+  background-color: rgba(1, 1, 96, 0.653);
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  justify-items: center;
+}
+
+#logo-container {
+  grid-row: 1 / 2;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.677);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav-bar {
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav-headings {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+
+#list-of-projects {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projects {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.project-edit-icon {
+  width: 16px;
+}
+#create-buttons-container {
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.create-buttons {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+}
+#content {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.form-containers {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: rgba(255, 228, 196, 0.6);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.forms {
+  padding: 50px;
+  background-color: rgba(0, 0, 255, 0.726);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px grey;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.text-input-containers,
+#project-container,
+#due-date-container,
+#priority-container,
+#completion-status-fieldset {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.text-input-labels,
+#project-select-label,
+#due-date-input-label,
+#priority-select-label,
+.completion-radio-label {
+  color: white;
+}
+.text-inputs,
+#project-select,
+#due-date-input,
+#priority-select {
+  background-color: rgba(255, 255, 255, 0.808);
+  color: rgb(0, 0, 0);
+  border: 1px solid grey;
+  border-radius: 10px;
+  height: 25px;
+  width: 300px;
+  padding: 0 7px;
+}
+
+#completion-status-fieldset {
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+#completion-status-fieldset > legend {
+  text-align: center;
+  color: white;
+}
+#completed-radio,
+#not-completed-radio {
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.submit-button,
+.cancel-button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 7px rgba(33, 0, 198, 0.669);
+}
+.cancel-button {
+  background-color: rgba(255, 0, 0, 0.769);
+  color: white;
+}
+
+.lists-view-containers {
+  grid-column: 1/ 2;
+  grid-row: 1 / 2;
+  display: grid;
+}
+
+.lists-view {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.todos {
+  background-color: rgba(165, 42, 42, 0.789);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.todos-title {
+  color: aliceblue;
+}
