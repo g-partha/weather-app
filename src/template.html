@@ -11,41 +11,64 @@
   <div id="container">
     <form id="search-form">
       <input type="text" id="search-input" placeholder="Enter Location">
-      <button id="search-button"></button>
+      <button id="search-button">Search</button>
     </form>
-    <div id="location-display"></div>
-    <table id="daily-weather-table">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Minimum Temperature</th>
-          <th>Maximum Temperature</th>
-          <th>Precipitation</th>
-        </tr>
-      </thead>
+    <div id="weather-data-container">
+      <div id="location-display">
+        <span></span>
+        <img id="weather-icon">
+      </div>
+      <div id="unit-system-toggle">
+        <label for="metric">
+          Metric
+          <input name="unit-toggle" value="metric" type="radio" id="metric">
+        </label>
+        <label for="us">
+          US
+          <input name="unit-toggle" value="us" type="radio" id="us">
+        </label>
+      </div>
 
-      <tbody>
-        <tr>
-          <th></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th></th>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
+      <table id="daily-weather-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Minimum Temperature</th>
+            <th>Maximum Temperature</th>
+            <th>Precipitation</th>
+          </tr>
+        </thead>
 
-    </table>
+        <tbody>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
   </div>
 </body>
 
