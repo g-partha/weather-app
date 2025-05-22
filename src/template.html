@@ -1,11 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-  </head>
-  <body>
-    <div id="container"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div id="container">
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Enter Location">
+      <button id="search-button"></button>
+    </form>
+    <div id="location-display"></div>
+    <table id="daily-weather-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Minimum Temperature</th>
+          <th>Maximum Temperature</th>
+          <th>Precipitation</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</body>
+
 </html>

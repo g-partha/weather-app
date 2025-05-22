@@ -1,3 +1,2 @@
 import { showWeather } from "./weatherdata";
-
-showWeather('numaligarh', 'metric');
+import './style.css';
