@@ -1,5 +1,5 @@
 import { getCellFromDailyWeatherTable, searchButton, searchInput } from './gui';
-import { locationDisplay, weatherIcon, metricToggle, usToggle } from './gui';
+import { locationDisplay, weatherIcon, metricToggle, usToggle, weatherDataContainer } from './gui';
 
 async function getWeather(location, unitSystem) {
   try {
@@ -39,6 +39,8 @@ export async function showWeather(locationInput, unitSystemInput) {
     getCellFromDailyWeatherTable(3, 1).textContent = data.days[3].tempmin;
     getCellFromDailyWeatherTable(3, 2).textContent = data.days[3].tempmax;
     getCellFromDailyWeatherTable(3, 3).textContent = data.days[3].precip;
+
+    weatherDataContainer.classList.remove('hidden');
   }
   catch (error) {
     console.log('Error in showWeather', error);

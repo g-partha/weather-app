@@ -1,3 +1,4 @@
+export const weatherDataContainer = document.querySelector('#weather-data-container');
 export const searchInput = document.querySelector('input#search-input');
 export const searchButton = document.querySelector('button#search-button');
 export const locationDisplay = document.querySelector('div#location-display span');

@@ -40,6 +40,10 @@
     align-content: start;
     justify-items: center;
 }
+
+div#weather-data-container.hidden{
+    display: none;
+}
 #location-display{
     display: flex;
     justify-content: center;
@@ -60,4 +64,23 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+#daily-weather-table{
+    table-layout: fixed;
+    width: 800px;
+    border-collapse: collapse;
+}
+thead th {
+    background-color: rgba(4, 4, 90, 0.829);
+    color: white;
+    height: 40px;
+}
+tbody td{
+    height: 40px;
+    text-align: center;
+}
+
+tbody > :nth-child(even){
+    background-color: antiquewhite;
 }
